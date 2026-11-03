@@ -1,11 +1,26 @@
 <script setup></script>
 
 <template>
-  <h1>You did it!</h1>
-  <p>
-    Visit <a href="https://vuejs.org/" target="_blank" rel="noopener">vuejs.org</a> to read the
-    documentation
-  </p>
+  <header>
+    <h2>FoodExplorer</h2>
+    <nav>
+      <RouterLink to="/">Inici</RouterLink>
+      <RouterLink to="/recipes">Recipes</RouterLink>
+    </nav>
+  </header>
+  <RouterView />
 </template>
 
-<style scoped></style>
+<style scoped>
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem;
+}
+nav {
+  display: flex;
+  gap: 0.5rem;
+}
+</style>
