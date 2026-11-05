@@ -12,9 +12,27 @@
 </template>
 
 <style scoped>
+main {
+  padding: 2rem 1.25rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: #b3b3b8;
+}
+
 img {
-  width: 400px;
+  width: min(440px, 100%);
   height: 400px;
   object-fit: cover;
+  border-radius: 14px;
+  border: 1px solid #2c2c31;
+  background: #151518;
 }
 </style>

@@ -9,7 +9,14 @@
 
 <style scoped>
 main {
-  width: 100%;
-  padding: 0.5rem;
+  padding: 2rem 1.25rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #b3b3b8;
 }
 </style>
