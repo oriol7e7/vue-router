@@ -6,14 +6,10 @@ const route = useRoute()
 const router = useRouter()
 const id = parseInt(route.params.id)
 const recipe = food.find((f) => f.id == id)
-const error = ref(false)
-if (!recipe) {
-  error.value = true
-}
 </script>
 
 <template>
-  <h1 v-if="error">Producte no trobat</h1>
+  <h1 v-if="recipe === undefined">Recepta no trobada</h1>
   <main v-else>
     <img :src="recipe.foto" alt="sd" />
     <section>

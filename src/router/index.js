@@ -10,24 +10,23 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: Home,
+      component: () => import('../views/Home.vue'),
     },
     {
       path: '/recipes',
       name: 'recipe',
-      component: Recipes,
+      component: () => import('../views/Recipes.vue'),
     },
     {
       path: '/recipes/:id',
       name: 'recipe-detail',
-      component: RecipeDetail,
+      component: () => import('../views/RecipeDetail.vue'),
     },
     {
-      path: '/not-found',
+      path: '/:pathMatch(.*)*',
       name: 'not-found',
-      component: NotFound,
+      component: () => import('../views/NotFound.vue'),
     },
-    { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFound },
   ],
 })
 

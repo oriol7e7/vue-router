@@ -31,7 +31,7 @@ img {
   width: min(440px, 100%);
   height: 400px;
   object-fit: cover;
-  border-radius: 14px;
+  border-radius: 4px;
   border: 1px solid #2c2c31;
   background: #151518;
 }
